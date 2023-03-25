@@ -1,14 +1,14 @@
 body{
     text-align: center;
     background-color: bisque;
-    font-size: 30px;
+    font-size: 25px;
     font-family:monospace;
 }
 
 .links{
     border: none;
     background-color: bisque;
-    font-size: 40px;
+    font-size: 30px;
     font-family:monospace;
     cursor: pointer;
     animation: Anim 2s ease 0s 1 normal;
