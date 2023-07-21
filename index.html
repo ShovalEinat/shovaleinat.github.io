@@ -2,93 +2,180 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shoval's Projects</title>
-    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image.png" href="siteLogo.png">
 </head>
 <body>
-     
-    <h1 id="Welcome"><u><b>Shoval's websites</b></u></h1>
 
-    <div id="warrper">
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Random-Number'" class="links">
-            Go to Random Number Generator
-        </button>        
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            overflow-x: hidden;
+        }
     
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Word-Quiz'" class="links">
-            Go to Word Quiz
-        </button>
+        .box {
+            height: 100vh;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            font-size: 28px;
+            color: white;
+            text-align: center;
+            box-shadow: 0 0 10px 0px rgba(0, 0, 0, 0.5), inset 0 0 20px 5px rgba(0, 0, 0, 0.5);
+            font-family: 'Montserrat', sans-serif;
+        }
+    
+        #box1 { background-color: rgb(70, 6, 173); }
+        #box2 { background-color: rgb(147, 117, 255); }
+        #box3 { background-color: #7F7679; }
+        #box4 { background-color: #00031b; }
+        #box5 { background-color: #14A7FF; }
+        #box6 { background-color: rgb(13, 0, 24); }
+        #box7 { background-color: rgb(3, 0, 17); }
+        #box8 { background-color: #C6A664; }
+        #box9 { background-color: #000000; }
+        #box10 { background-color: rgb(0, 81, 148); }
+        #box11 { background-color: rgb(61, 61, 61); }
+    
+        .title {
+            font-size: 50px;
+            margin-bottom: 10px;
+        }
+    
+        .description {
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: #fff;
+            color: #333;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 24px;
+            transition: background-color 0.3s ease;
+            margin: 5px;
+        }
+    
+        .button:hover {
+            background-color: #c9c9c9;
+        }
+    
+        .scroll-buttons {
+            position: fixed;
+            top: 50%;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(-50%);
+        }
+    
+        .scroll-button {
+            width: 40px;
+            height: 40px;
+            background-color: #f0f0f0;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 28px;
+            cursor: pointer;
+            margin-bottom: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+            transition: background-color 0.3s ease;
+        }
+    
+        .scroll-button:hover {
+            background-color: #ccc;
+        }
+    
+        body::-webkit-scrollbar {
+            width: 12px;
+        }
+    
+        body::-webkit-scrollbar-thumb {
+            background-color: #ffffff;
+            border-radius: 5px;
+    
+        }
+    
+        body::-webkit-scrollbar-thumb:hover {
+            background-color: #cccccc;
+        }
+    
+        body::-webkit-scrollbar-track {
+            background-color: rgb(71, 71, 71);
+        }
+    </style>
+    </head>
+    <body>
+    <div class="box" id="box1">
+        <div class="title">Random Number Generator</div>
+        <div class="description">Shovel's first website, with a small puzzle, and the site generate a random number up to 100.</div>
+        <a class="button" href="https://shovaleinat.github.io/Random-Number/">Go to Random Number Generator</a>
+    </div>
+    <div class="box" id="box2">
+        <div class="title">Word Quiz</div>
+        <div class="description">Preparation for dictation.</div>
+        <a class="button" href="https://shovaleinat.github.io/Word-Quiz/">Go to Word Quiz</a>
+    </div>
+    <div class="box" id="box3">
+        <div class="title">Math Game</div>
+        <div class="description">Evaluation of your ability to calculate quick multiplication.</div>
+        <a class="button" href="https://shovaleinat.github.io/Math-Game/">Go to Math Game</a>
+    </div>
+    <div class="box" id="box4">
+        <div class="title">Connect 4</div>
+        <div class="description">Local game of Connect 4.</div>
+        <a class="button" href="https://shovaleinat.github.io/Connect-4/">Go to Connect 4</a>
+    </div>
+    <div class="box" id="box5">
+        <div class="title">Chess Timer</div>
+        <div class="description">A chess timer.</div>
+        <a class="button" href="https://shovaleinat.github.io/Chess-Timer/">Go to Chess Timer</a>
+    </div>
+    <div class="box" id="box6">
+        <div class="title">Guess The Number</div>
+        <div class="description">Speed game for guessing a number.</div>
+        <a class="button" href="https://shovaleinat.github.io/Guess-The-Number/">Go to Guess The Number</a>
+    </div>
+    <div class="box" id="box7">
+        <div class="title">Countdown Timer</div>
+        <div class="description">Calculation of the remaining time until a selected date.</div>
+        <a class="button" href="https://shovaleinat.github.io/Countdown-Timer/">Go to Countdown Timer</a>
+    </div>
+    <div class="box" id="box8">
+        <div class="title">Word Counter</div>
+        <div class="description">Counting sentences, words and letters.</div>
+        <a class="button" href="https://shovaleinat.github.io/Word-Counter/">Go to Word Counter</a>
+    </div>
+    <div class="box" id="box9">
+        <div class="title">Tic Tac Toe</div>
+        <div class="description">Tic Tac Toe with math.</div>
+        <a class="button" href="https://shovaleinat.github.io/Tic-Tac-Toe/">Go to Tic Tac toe</a>
+    </div>
+    <div class="box" id="box10">
+        <div class="title">Cookie Clicker</div>
+        <div class="description">A simple version of the game Cookie Clicker.</div>
+        <a class="button" href="https://shovaleinat.github.io/Cookie-Clicker/">Go to Cookie Clicker</a>
+    </div>
+    <div class="box" id="box11">
+        <div class="title">Password Hack</div>
+        <div class="description">Password decryption in the site's source code.</div>
+        <a class="button" href="https://shovaleinat.github.io/Password-Hack-1/">Go to Password Hack</a>
+    </div>
+    <div class="scroll-buttons">
+        <div class="scroll-button" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">&#9650;</div>
+        <div class="scroll-button" onclick="window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' })">&#9660;</div>
     </div>
 
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Math-Game'" class="links">
-            Go to Math Game
-        </button>
-    </div>
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Connect-4'" class="links">
-            Go to Connect 4
-        </button>
-    </div>
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Chess-Timer'" class="links">
-            Go to Chess Timer
-        </button>
-    </div>
-
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Guess-The-Number'" class="links">
-            Go to Guess The Number
-        </button>
-    </div>
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Countdown-Timer'" class="links">
-            Go to Countdown Timer
-        </button>
-    </div>
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Word-Counter'" class="links">
-            Go to Word Counter
-        </button>
-    </div>
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Tic-Tac-Toe'" class="links">
-            Go to Tic Tac toe
-        </button>
-    </div>
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Cookie-Clicker'" class="links">
-            Go to Cookie Clicker
-        </button>
-    </div>
-
-    <div>
-        <h2>--------------------------</h2>
-        <button onclick="location.href='https://shovaleinat.github.io/Password-Hack-1'" class="links">
-            Go to Password Hack
-        </button>
-    </div>
-
-    </div>
 </body>
 </html>
